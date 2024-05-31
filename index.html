@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <form>
-        <label class="labels">Pesso</label>
+        <label class="labels">Peso</label>
         <input class="weight" type="number" required></br>
+
         <label class="labels" title="Pressão Arterial Sistólica">PAS</label>
-        <input class="pas" type="number" required>
+        <input class="pas" type="number" required></br>
+        
+        <label class="labels" title="Pressão Arterial Diastólica">PAD</label>
+        <input class="pad" type="number" required></br>
+
+        <label class="labels">Htci</label>
+        <input class="htci" type="number" required></br>
+        
+        <label class="labels">Vp</label>
+        <input class="vp" type="number" required></br>
+
+        <input type="submit" class="calculate" value="Calcular">
     </form>
+
+    <div class="result">
+        PP: <label class="labelPp"> </label></br>
+        PAM: <label class="labelPam"> </label></br>
+        SC: <label class="labelSc"> </label></br>
+        Heparina: <label class="labelHeparine"> </label>mg/ml</br>
+        Débito cardíaco: <label class="labelDc"> </label></br>
+        Manitol: <label class="labelManitol"> </label></br>
+        VS: <label class="labelVs"> </label></br>
+        Hematócrito: <label class="labelHematocrito"> </label></br>
+    </div>
 </body>
 </html>
