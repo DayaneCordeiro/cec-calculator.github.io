@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         // Calculo do Manitol
         var m = weight * 3;
-        $('.labelManitol').text(dc.toFixed(2));
+        $('.labelManitol').text(weight.toFixed(2));
 
         // Cálculo do VS
         var vs;
