@@ -61,9 +61,6 @@ $(document).ready(function() {
         // Hematócrito
         var hematocrito = (htci * vs) / (vs + vp);
         $('.labelHematocrito').text(vs.toFixed(2));
-
-        $('form input').val("");
-        $('.calculate').val("Calcular");
     });
 
 });
