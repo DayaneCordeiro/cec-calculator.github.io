@@ -23,6 +23,8 @@ $(document).ready(function() {
         else if(weight >= 35)
             sc = ((weight * 4) + 7) / (weight + 90)
 
+        console.log(sc)
+
         $('.labelSc').text(sc.toFixed(2));
 
         // Calculo da Heparina
@@ -60,7 +62,7 @@ $(document).ready(function() {
 
         // Hematócrito
         var hematocrito = (htci * vs) / (vs + vp);
-        $('.labelHematocrito').text(vs.toFixed(2));
+        $('.labelHematocrito').text(hematocrito.toFixed(2));
     });
 
 });
