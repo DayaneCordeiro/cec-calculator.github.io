@@ -28,7 +28,7 @@ $(document).ready(function() {
         $('.labelSc').text(sc.toFixed(2));
 
         // Calculo da Heparina
-        var heparine = (weight * 4) / 50;
+        var heparine = (weight * 3) / 50;
         $('.labelHeparine').text(heparine.toFixed(2));
 
         // Cálculo do Débito Cardíaco
@@ -63,6 +63,10 @@ $(document).ready(function() {
         // Hematócrito
         var hematocrito = (htci * vs) / (vs + vp);
         $('.labelHematocrito').text(hematocrito.toFixed(2));
+
+        // Volemia
+        var volemia = weight * 65;
+        $('.labelVolemia').text(volemia.toFixed(2));
     });
 
 });
